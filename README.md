@@ -31,6 +31,7 @@
 - Port number: **9100**
 - Name: **node-exporter**
 <br>
+
 - For all new security groups, set the source to **0.0.0.0/0**.
 
 ### 5. Launch a New Target Instance for Monitoring
