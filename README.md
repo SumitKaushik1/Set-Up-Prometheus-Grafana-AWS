@@ -1,30 +1,46 @@
 # Set-Up-Prometheus-Grafana-AWS
-opne the aws account and teh then make the ece instsnce named as promethus server on ubuntu opearting system ,
-check allow http traffic from internet
-check allow the https traffic from internet
-
-in the network settings
-
-edit settings 
-
-in the inbound traffic rule 
-add the new security group 
-add the port number 9090  name it as  prometheus
-
-add the new security group 
-add the port number 3000 named it as  graphana
-add the new security group 
-add the portnuber fo the 9100 named it as  node-exporter 
-
-change the source of any security group 0.0.0.0/0 in all new security group 
 
 
-launch any new target instsacne on which you want ot monitor ,on ubunu operting system, in teh network setting ->edit settings 
-now in the inbound traffic rule
+## Step-by-Step Guide
 
-add the new security group 
-add the port number 9100 named it as the node-exporter 
+### 1. Open AWS Account
+- Log in to your AWS account.
 
-and lauch the instance
+### 2. Create an EC2 Instance for Prometheus
+- Launch a new EC2 instance.
+- Name the instance: **Prometheus Server**.
+- Select the **Ubuntu operating system**.
+
+### 3. Configure Network Settings
+- In the network settings, check the boxes to:
+  - Allow **HTTP traffic** from the internet.
+  - Allow **HTTPS traffic** from the internet.
+
+### 4. Edit Inbound Traffic Rules
+- Add the following new security groups:
+
+#### Prometheus
+- Port number: **9090**
+- Name: **prometheus**
+
+#### Grafana
+- Port number: **3000**
+- Name: **grafana**
+
+#### Node Exporter
+- Port number: **9100**
+- Name: **node-exporter**
+
+- For all new security groups, set the source to **0.0.0.0/0**.
+
+### 5. Launch a New Target Instance for Monitoring
+- Launch a new EC2 instance.
+- Use the **Ubuntu operating system**.
+- In the network settings, edit the settings:
+  - Configure the **inbound traffic rule** as needed for monitoring purposes.
+
+## Notes
+- Ensure that all configurations comply with your security policies and best practices.
+- Adjust security group settings as necessary for your specific use case.
 
 
