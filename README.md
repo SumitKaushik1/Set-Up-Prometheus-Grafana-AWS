@@ -30,14 +30,17 @@
 #### Node Exporter
 - Port number: **9100**
 - Name: **node-exporter**
-
+<br>
 - For all new security groups, set the source to **0.0.0.0/0**.
 
 ### 5. Launch a New Target Instance for Monitoring
 - Launch a new EC2 instance.
 - Use the **Ubuntu operating system**.
 - In the network settings, edit the settings:
-  - Configure the **inbound traffic rule** as needed for monitoring purposes.
+- Configure the **inbound traffic rule** as needed for monitoring purposes.
+ #### Node Exporter
+- Port number: **9100**
+- Name: **node-exporter**
 
 ## Notes
 - Ensure that all configurations comply with your security policies and best practices.
