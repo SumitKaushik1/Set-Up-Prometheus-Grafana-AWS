@@ -47,4 +47,3 @@
 - Ensure that all configurations comply with your security policies and best practices.
 - Adjust security group settings as necessary for your specific use case.
 
-next we will see in the nexr videi
