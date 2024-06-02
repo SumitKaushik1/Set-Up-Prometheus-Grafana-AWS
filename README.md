@@ -35,6 +35,7 @@
 - For all new security groups, set the source to **0.0.0.0/0**.
 
 ### 5. Launch a New Target Instance for Monitoring
+
 - Launch a new EC2 instance.
 - Use the **Ubuntu operating system**.
 - In the network settings, edit the settings:
@@ -43,6 +44,12 @@
 - Port number: **9100**
 - Name: **node-exporter**
 
+or 
+- changes can be applied on the running instance(window-demo)
+ - change only the security group inbound traffic rule and add 
+     #### Node Exporter
+     - Port number: **9100**
+     - Name: **node-exporter**  
 ## Notes
 - Ensure that all configurations comply with your security policies and best practices.
 - Adjust security group settings as necessary for your specific use case.
