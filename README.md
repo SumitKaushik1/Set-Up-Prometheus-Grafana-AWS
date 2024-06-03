@@ -45,7 +45,7 @@
 - Name: **node-exporter**
 
 or 
-- changes can be applied on the running instance(window-demo)
+- changes can be applied on the running instance(portfolio1 or prometheus server)
  - change only the security group inbound traffic rule and add 
      #### Node Exporter
      - Port number: **9100**
